@@ -11,7 +11,7 @@ public class SwiftMt103Service {
     public String generateMT103(TransactionRequest request) {
         MT103MessageBuilder builder = new MT103MessageBuilder();
 
-        return builder.withHeader()
+        return builder.withHeader("BANKBEBBAXXX", "BANKBEBBXXXX")
                 .withTransactionReference(request.getReference())
                 .withDetails(request)
                 .build();
