@@ -2,6 +2,7 @@ package com.tienphuckx.swifthelperv1.service;
 
 
 import com.tienphuckx.swifthelperv1.builder.MT103MessageBuilder;
+import com.tienphuckx.swifthelperv1.builder.MT103ProwideCoreBuilder;
 import com.tienphuckx.swifthelperv1.model.TransactionRequest;
 import org.springframework.stereotype.Service;
 
@@ -16,4 +17,9 @@ public class SwiftMt103Service {
                 .withDetails(request)
                 .build();
     }
+
+    public String generateMT103ProwideCore(TransactionRequest request) {
+        return MT103ProwideCoreBuilder.generateMT103ProwideCore(request);
+    }
+
 }
