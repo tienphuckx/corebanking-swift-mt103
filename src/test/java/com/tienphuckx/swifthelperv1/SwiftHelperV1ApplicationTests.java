@@ -1,10 +1,10 @@
-package com.tienphuckx.swifthelper;
+package com.tienphuckx.swifthelperv1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SwiftHelperApplicationTests {
+class SwiftHelperV1ApplicationTests {
 
     @Test
     void contextLoads() {
